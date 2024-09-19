@@ -1,0 +1,33 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Probot app",
+  "author": "rocket452",
+  "license": "ISC",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "node --test",
+    "dev": "nodemon --exec \"npm start\""
+  },
+  "dependencies": {
+    "@slack/web-api": "^7.5.0",
+    "openai": "^4.62.0",
+    "probot": "^13.0.1"
+  },
+  "devDependencies": {
+    "nock": "^14.0.0-beta.5",
+    "nodemon": "^3.1.5",
+    "smee-client": "^2.0.0"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "type": "module"
+}
